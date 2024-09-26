@@ -10,6 +10,7 @@ In addition to a demonstration for each of your chosen algorithms, you should pr
 # 1. Loading Dataset
 The Breast Cancer dataset is a commonly used dataset in machine learning and statistical research for binary classification tasks. It is part of the sklearn.datasets module in Scikit-learn and is often used for tasks like classification, model evaluation, and feature analysis. The dataset includes features derived from digitized images of fine needle aspirates (FNA) of breast masses, describing characteristics of the cell nuclei present in the images.
 
+
 	•	Goal: The goal is to predict whether a breast tumor is benign or malignant based on various features extracted from breast mass images.
 	•	Type: Supervised learning, Binary classification.
 	•	Target Labels:
@@ -34,7 +35,7 @@ Shape of the Dataset:
 	•	Number of Classes (n_classes): 2 (Malignant, Benign)
 
 # 2.1 Rulefit Classifier
-
+<img width="1601" alt="Screenshot 2024-09-25 at 22 22 04" src="https://github.com/user-attachments/assets/4c59edd9-7d82-478b-8841-e70173e9cd21">
 # 2.2 Boosted Stump
 ![image](https://github.com/user-attachments/assets/6b8d797c-5c56-4969-92c4-124776e22e67)
 
