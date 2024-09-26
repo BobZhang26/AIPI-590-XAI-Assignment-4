@@ -35,6 +35,11 @@ Shape of the Dataset:
 	•	Number of Classes (n_classes): 2 (Malignant, Benign)
 
 # 2.1 Rulefit Classifier
+```python
+# initialize RuleFitRegressor and fit the training data
+clf = RuleFitClassifier() # Use OneVsRestClassifier for multiclass
+clf.fit(X_train, y_train)
+```
 <img width="1601" alt="Screenshot 2024-09-25 at 22 22 04" src="https://github.com/user-attachments/assets/4c59edd9-7d82-478b-8841-e70173e9cd21">
 
 # 2.2 Boosted Stump
