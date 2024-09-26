@@ -58,6 +58,19 @@ demo_helper.viz_classification_preds(probs, y_test)
 ![image](https://github.com/user-attachments/assets/6b8d797c-5c56-4969-92c4-124776e22e67)
 
 # 2.3 Hierarchical shrinkage wrapper
+```python
+# fit the model
+HSTC = HSTreeClassifierCV(max_leaf_nodes=7)  # initialize a model
+HSTC.fit(X_train, y_train)   # fit model
+preds = HSTC.predict(X_test) # discrete predictions: shape is (n_test, 1)
+preds_proba = HSTC.predict_proba(X_test) # predicted probabilities: shape is (n_test, n_classes)
+
+# visualize the model
+plot_tree(HSTC.estimator_, feature_names=feat_names)
+# look at performance
+probs = HSTC.predict_proba(X_test)
+demo_helper.viz_classification_preds(probs, y_test)
+```
 ![image](https://github.com/user-attachments/assets/e4626df2-512b-491b-896b-db180434e528)
 ![image](https://github.com/user-attachments/assets/65bab5b6-cb85-4a44-8be8-475e7b65d562)
 
