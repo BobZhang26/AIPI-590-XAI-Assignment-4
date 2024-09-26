@@ -43,6 +43,18 @@ clf.fit(X_train, y_train)
 <img width="1601" alt="Screenshot 2024-09-25 at 22 22 04" src="https://github.com/user-attachments/assets/4c59edd9-7d82-478b-8841-e70173e9cd21">
 
 # 2.2 Boosted Stump
+```python
+# fit boosted stumps
+# get feature names from load_breast_cancer
+feat_names = load_breast_cancer.feature_names
+brc = BoostedRulesClassifier(n_estimators=10)
+brc.fit(X_train, y_train, feature_names=feat_names)
+
+# look at performance
+probs = brc.predict_proba(X_test)
+demo_helper.viz_classification_preds(probs, y_test)
+
+```
 ![image](https://github.com/user-attachments/assets/6b8d797c-5c56-4969-92c4-124776e22e67)
 
 # 2.3 Hierarchical shrinkage wrapper
