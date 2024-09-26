@@ -40,6 +40,38 @@ Shape of the Dataset:
 clf = RuleFitClassifier() # Use OneVsRestClassifier for multiclass
 clf.fit(X_train, y_train)
 ```
+```
+X1: mean radius
+X2: mean texture
+X3: mean perimeter
+X4: mean area
+X5: mean smoothness
+X6: mean compactness
+X7: mean concavity
+X8: mean concave points
+X9: mean symmetry
+X10: mean fractal dimension
+X11: radius error
+X12: texture error
+X13: perimeter error
+X14: area error
+X15: smoothness error
+X16: compactness error
+X17: concavity error
+X18: concave points error
+X19: symmetry error
+X20: fractal dimension error
+X21: worst radius
+X22: worst texture
+X23: worst perimeter
+X24: worst area
+X25: worst smoothness
+X26: worst compactness
+X27: worst concavity
+X28: worst concave points
+X29: worst symmetry
+X30: worst fractal dimension
+```
 <img width="1601" alt="Screenshot 2024-09-25 at 22 22 04" src="https://github.com/user-attachments/assets/4c59edd9-7d82-478b-8841-e70173e9cd21">
 
 # 2.2 Boosted Stump
