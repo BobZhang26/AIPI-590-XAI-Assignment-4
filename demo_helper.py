@@ -22,7 +22,7 @@ def viz_classification_preds(probs, y_test):
     plt.subplot(122)
     preds = np.argmax(probs, axis=1)
     plt.title('ROC curve')
-    fpr, tpr, thresholds = metrics.roc_curve(y_test, preds)
+    fpr, tpr, _ = metrics.roc_curve(y_test, preds)
     plt.xlabel('False positive rate')
     plt.ylabel('True positive rate')
     plt.plot(fpr, tpr)
